@@ -1,5 +1,0 @@
-@import "tailwindcss";
-
-h1 {
-  @apply text-4xl font-bold text-center my-4 bg-green-400;
-}
