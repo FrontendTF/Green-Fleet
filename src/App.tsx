@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import Home from "./pages/Home";
-import Drive from "./pages/Drive";
+import Drive from "./pages/Fleet";
 import History from "./pages/History";
-import Tasks from "./pages/Tasks";
+import Tasks from "./pages/Reports";
 import Settings from "./pages/Settings";
 
 /* Nicht in die App.tsx schreiben sondern in Layout, App.tsx nur für Routing, hätte ich zuerst erstellen sollen
