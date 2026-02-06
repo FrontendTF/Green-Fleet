@@ -1,22 +1,24 @@
 import React from "react";
-
+import type { LucideIcon } from "lucide-react";
 interface TrackButtonProps {
     label: string;
     onClick: () => void;
     variant?: 'primary' | 'secondary';
+    icon?: LucideIcon;
 }
 
-export const TrackButton: React.FC<TrackButtonProps> = ({ label, onClick, variant = "primary" }) => {
-    const baseStyle = "px-4 py-2 rounded-lg font-bold transition duration-200";
+export const TrackButton: React.FC<TrackButtonProps> = ({ label, onClick, variant = "primary", icon: Icon }) => {
+    const baseStyle = "w-[60vw] h-14 rounded-3xl font-bold transition duration-200 flex items-center justify-center gap-3 shadow-lg";
     const variantStyle = variant === 'primary'
-        ? "bg-green-500 hover:bg-green-600 text-white"
-        : "bg-green-200 hover:bg-green-300 text-gray-800";
+        ? "bg-default-green hover:bg-opacity-80 text-white"
+        : "bg-default-green hover:bg-opacity-70 text-gray-800"
 
     return (
         <button
             className={`${baseStyle} ${variantStyle}`}
             onClick={onClick}>
-            {label}
+            {Icon && <Icon size={24} strokeWidth={2.5} />}
+            <span>{label}</span>
         </button>
     );
 }
