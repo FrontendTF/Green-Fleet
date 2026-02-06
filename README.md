@@ -1,5 +1,11 @@
 # React + TypeScript + Vite
 
+## npm install Installieren
+## npm run build PWA builden
+## npm run preview -> PWA ansehen -> für Handy -> npm run previes -- -- host (vite blockiert standardmäsig von außen)
+## npm run dev -> für browser ohne installationsmöglichkeit
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
