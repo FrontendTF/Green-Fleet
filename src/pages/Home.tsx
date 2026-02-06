@@ -11,12 +11,12 @@ export default function Home() {
                 <div className="flex-shrink-0">
                     <img
                         src={profilePlaceholder}
-                        alt="Profilbild"
+                        alt="Profile Picture Placeholder"
                         className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm" />
                 </div>
 
                 <div>
-                    <h1 className="text-2xl text-gray-900">Welcome, Olaf</h1>
+                    <h1 className="text-2xl">Welcome, Olaf</h1>
                 </div>
             </header>
 
