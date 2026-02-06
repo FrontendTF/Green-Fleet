@@ -4,9 +4,9 @@ import { Home, LifeBuoy, Clock, ClipboardList, Settings } from "lucide-react";
 // Navigation items for the bottom navigation bar from https://lucide.dev/icons/
 const items = [
   { to: "/", label: "Home", icon: Home },
-  { to: "/drive", label: "Drive", icon: LifeBuoy },
+  { to: "/fleet", label: "Fleet", icon: LifeBuoy },
   { to: "/history", label: "History", icon: Clock },
-  { to: "/tasks", label: "Tasks", icon: ClipboardList },
+  { to: "/reports", label: "Reports", icon: ClipboardList },
   { to: "/settings", label: "Settings", icon: Settings },
 ];
 
@@ -20,7 +20,7 @@ export default function BottomNav() {
               <li key={to} className="flex items-center justify-center">
                 <NavLink
                   to={to}
-                  className={({}) =>
+                  className={({ }) =>
                     [
                       "flex w-full flex-col items-center justify-center gap-1",
                       "outline-none focus-visible:ring-2 focus-visible:ring-black/20 rounded-2xl",

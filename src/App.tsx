@@ -18,9 +18,9 @@ function App() {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<Home />} />
-        <Route path="/drive" element={<Drive />} />
+        <Route path="/fleet" element={<Drive />} />
         <Route path="/history" element={<History />} />
-        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/reports" element={<Tasks />} />
         <Route path="/settings" element={<Settings />} />
       </Route>
     </Routes>

@@ -1,3 +1,3 @@
-export default function Tasks() {
-  return <h1>Tasks</h1>;
+export default function Reports() {
+  return <h1>Reports</h1>;
 }

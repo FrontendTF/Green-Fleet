@@ -2,7 +2,7 @@ import { Search } from "lucide-react";
 import { Plus } from "lucide-react";
 import { VehicleListItem } from "../components/VehicleList";
 
-export default function Vehicles() {
+export default function Fleet() {
   const dummyVehicles = [1, 2, 3, 4, 5, 6];
 
   return (
