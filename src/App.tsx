@@ -1,13 +1,21 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import AppLayout from "./layout/AppLayout";
 import Home from "./pages/Home";
-import About from "./pages/About";
+import Drive from "./pages/Drive";
+import History from "./pages/History";
+import Tasks from "./pages/Tasks";
+import Settings from "./pages/Settings";
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/drive" element={<Drive />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/tasks" element={<Tasks />} />
+        <Route path="/settings" element={<Settings />} />
+      </Route>
     </Routes>
   );
 }
