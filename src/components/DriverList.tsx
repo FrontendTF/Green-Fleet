@@ -1,12 +1,12 @@
 import { ChevronRight } from "lucide-react";
-import vehiclePlaceholder from "../assets/profile-picture-placeholder.svg";
+import driverPlaceholder from "../assets/profile-picture-placeholder.svg";
 
 export function DriverListItem() {
   return (
     <div className="bg-white p-4 shadow-sm border border-gray-100 flex items-center gap-4 hover:bg-gray-50 transition-colors cursor-pointer">
       <div className="w-16 h-12 flex-shrink-0 bg-[#f8faf8] rounded-xl overflow-hidden">
         <img
-          src={vehiclePlaceholder}
+          src={driverPlaceholder}
           alt="Vehicle"
           className="w-full h-full object-contain"
         />
