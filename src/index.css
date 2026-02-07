@@ -2,3 +2,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*headlines*/
+h1 {
+  @apply text-3xl font-bold text-gray-900 mb-6;
+}
+
+/*Reports*/
+.reportdivs div {
+  @apply bg-gray-200 rounded-md p-3;
+}
+.reportdivs div h2 {
+  @apply font-bold text-green-800;
+}
+.reportdivs div p:nth-child(2) {
+  @apply text-xl font-bold;
+}
+.reportdivs div p:nth-child(3) {
+  @apply text-base text-green-900 opacity-40 font-semibold;
+}
+.vehiclefilter label {
+  @apply flex items-center gap-2;
+}
+.vehiclefilter input {
+  @apply h-4 w-4;
+}
+.vehiclefilter span {
+  @apply text-sm;
+}
