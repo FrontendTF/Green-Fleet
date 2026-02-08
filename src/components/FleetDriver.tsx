@@ -13,7 +13,7 @@ export default function DriversTab() {
         <input
           type="text"
           placeholder="Search for a driver ..."
-          className="w-full h-12 pl-10 pr-4 bg-white border border-gray-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-default-green transition-all"
+          className="searchinput"
         />
       </div>
       <div className="flex flex-col gap-4">
@@ -22,12 +22,9 @@ export default function DriversTab() {
         ))}
       </div>
 
-      <div className="fixed bottom-[64px] left-0 w-full bg-[#f8faf8] border-t border-gray-100 px-6 pb-6 z-40 flex flex-col items-center shadow-[0_-15px_20px_-5px_rgba(0,0,0,0.05)]">
-        <button
-          type="button"
-          className="flex items-center justify-center w-14 h-14 bg-white rounded-full border-2 border-default-green shadow-sm active:scale-95 transition-all"
-        >
-          <Plus size={28} className="text-default-green stroke-[3px]" />
+      <div className="plusbuttondiv">
+        <button type="button" className="plusbutton">
+          <Plus size={28} className="plusbuttonicon" />
         </button>
 
         <span className="text-default-green font-semibold text-sm tracking-wide mt-2">

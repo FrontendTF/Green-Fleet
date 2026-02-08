@@ -1,10 +1,13 @@
 import { TrackButton } from "../components/TrackButton";
 import vehiclePlaceholder from "../assets/vehicle-placeholder.svg";
 import profilePlaceholder from "../assets/profile-picture-placeholder.svg";
-import { Play } from "lucide-react";
+import { Play, Square } from "lucide-react";
+import { useState } from "react";
 
 // In Typescript immer mit export default function
 export default function Home() {
+  const [isTracking, setIsTracking] = useState(false);
+
   return (
     <main>
       <header className="mb-8 flex items-center gap-4 justify-center">
@@ -33,7 +36,12 @@ export default function Home() {
               className="w-full h-auto object-contain"
             />
 
-            <button className="w-full py-2 bg-white text-default-green text-sm font-semibold rounded-xl shadow-sm border border-gray-100 hover:bg-gray-50 transition-colors">
+            <button
+              className={[
+                "whitebuttondesign",
+                isTracking ? "invisible" : "",
+              ].join(" ")}
+            >
               Choose vehicle
             </button>
           </div>
@@ -49,10 +57,10 @@ export default function Home() {
 
       <div className="mt-12 flex justify-center">
         <TrackButton
-          label="Start tracking"
-          onClick={() => console.log("Start ride")}
+          label={isTracking ? "Stop tracking" : "Start tracking"}
+          onClick={() => setIsTracking((v) => !v)}
           variant="primary"
-          icon={Play}
+          icon={isTracking ? Square : Play}
         />
       </div>
     </main>

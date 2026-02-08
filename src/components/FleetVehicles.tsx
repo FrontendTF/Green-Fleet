@@ -1,4 +1,4 @@
-import { Search, Plus } from "lucide-react";
+import { Search } from "lucide-react";
 import { VehicleListItem } from "../components/VehicleList";
 
 export default function VehiclesTab() {
@@ -13,7 +13,7 @@ export default function VehiclesTab() {
         <input
           type="text"
           placeholder="Search for a vehicle ..."
-          className="w-full h-12 pl-10 pr-4 bg-white border border-gray-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-default-green transition-all"
+          className="searchinput"
         />
       </div>
 
@@ -22,8 +22,6 @@ export default function VehiclesTab() {
           <VehicleListItem key={id} />
         ))}
       </div>
-
-     
     </>
   );
 }

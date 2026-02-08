@@ -24,19 +24,14 @@ export function VehicleListItem() {
           <ChevronRight size={24} />
         </div>
       </div>
-      <div className="fixed bottom-[64px] left-0 right-0 z-40 pb-[env(safe-area-inset-bottom)]">
-        <div className="mx-auto max-w-md bg-[#f8faf8] border-t border-gray-100 pb-6 flex flex-col items-center shadow-[0_-15px_20px_-5px_rgba(0,0,0,0.05)]">
-          <button
-            type="button"
-            className="flex items-center justify-center w-14 h-14 bg-white rounded-full border-2 border-default-green shadow-sm active:scale-95 transition-all"
-          >
-            <Plus size={28} className="text-default-green stroke-[3px]" />
-          </button>
+      <div className=" plusbuttondiv">
+        <button type="button" className="plusbutton">
+          <Plus size={28} className="plusbuttonicon" />
+        </button>
 
-          <span className="text-default-green font-semibold text-sm tracking-wide mt-2">
-            Add vehicle
-          </span>
-        </div>
+        <span className="text-default-green font-semibold text-sm tracking-wide mt-2">
+          Add vehicle
+        </span>
       </div>
     </>
   );

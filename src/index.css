@@ -8,7 +8,7 @@ h1 {
   @apply text-3xl font-bold text-gray-900 mb-6;
 }
 h2 {
-    @apply text-2xl font-semibold
+  @apply text-2xl font-semibold;
 }
 
 /*Reports*/
@@ -16,7 +16,7 @@ h2 {
   @apply bg-gray-200 rounded-md p-3;
 }
 .reportdivs div h2 {
-  @apply font-bold text-green-800;
+  @apply font-bold text-green-800 text-lg;
 }
 .reportdivs div p:nth-child(2) {
   @apply text-xl font-bold;
@@ -32,4 +32,20 @@ h2 {
 }
 .vehiclefilter span {
   @apply text-sm;
+}
+/*Fleet*/
+.searchinput {
+  @apply w-full h-12 pl-10 pr-4 bg-white border border-gray-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-default-green transition-all;
+}
+.plusbuttonicon {
+  @apply text-default-green stroke-[3px];
+}
+.plusbutton {
+  @apply flex items-center justify-center w-14 h-14 bg-white rounded-full border-2 border-default-green shadow-sm active:scale-95 transition-all;
+}
+.plusbuttondiv {
+  @apply fixed bottom-[64px] left-0 w-full bg-[#f8faf8] border-t border-gray-100 px-6 pb-6 z-40 flex flex-col items-center;
+}
+.whitebuttondesign {
+  @apply w-full py-2 bg-white text-default-green text-sm font-semibold rounded-xl shadow-sm border border-gray-100 hover:bg-gray-50 transition-colors;
 }

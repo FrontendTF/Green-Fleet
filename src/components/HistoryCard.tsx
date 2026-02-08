@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export function HistoryCard() {
   const [open, setOpen] = useState(false);
+
   return (
     <div className="bg-white rounded-3xl p-5 shadow-sm border border-gray-100 relative">
       <div className="flex items-start gap-4 mb-4">
