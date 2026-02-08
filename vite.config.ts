@@ -17,6 +17,9 @@ export default defineConfig({
       base: "/", // wichtig: explizit
       buildBase: "/", // wichtig: explizit
 
+      workbox: {
+        navigateFallback: "/index.html",
+      },
       registerType: "autoUpdate", // "prompt" wäre Update-Flow (du entscheidest, wann reload), autoUpdate = sofort neu laden
       // inclues assests im public-ordner später einfügen
       manifest: {
